@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kritika Regmi | UI/UX Designer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Kritika Regmi</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 30px; max-width: 1000px; margin: auto;">
+    <div class="about-image" style="flex: 1 1 250px; text-align: center;">
+      <img src="kritika.jpg" alt="Kritika Regmi" style="border-radius: 15px; max-width: 250px; width: 100%; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+    </div>
+    <div class="about-text" style="flex: 2 1 400px;">
+      <p>I am an IT student passionate about UI/UX design, combining technology with creativity to craft user-friendly and responsive interfaces. My artistic background in painting and sketching brings a unique touch to my digital designs. I am eager to gain hands-on experience as a UI/UX designer.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-category">
+    <h3>Database & Programming Languages</h3>
+    <div class="skills">
+      <div class="skill">HTML/CSS</div>
+      <div class="skill">Python</div>
+      <div class="skill">SQL</div>
+    </div>
+  </div>
+
+  <div class="skills-category">
+    <h3>Software Tools</h3>
+    <div class="skills">
+      <div class="skill">GitHub</div>
+      <div class="skill">VS Code</div>
+      <div class="skill">Excel</div>
+      <div class="skill">Cisco Packet Tracer</div>
+    </div>
+  </div>
+
+  <div class="skills-category">
+    <h3>Design & Prototyping</h3>
+    <div class="skills">
+      <div class="skill">Figma</div>
+      <div class="skill">Canva</div>
+      <div class="skill">Adobe XD (basic)</div>
+      <div class="skill">Wireframing</div>
+      <div class="skill">Prototyping</div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>
+        <a href="https://www.figma.com/design/qkdyiZJvCHrCOlOqluRjzt/Flight-Booking-Website-Landing-page-design--Community-?node-id=0-1&t=vbBMJ3WFuGiZXk0M-1" target="_blank">
+          Flight Management System UI
+        </a>
+      </h3>
+      <p>Designed a responsive and user-friendly interface for a flight management system website. Focused on booking flow, flight schedules, and dashboards with clean navigation and modern layout.</p>
+    </div>
+<div class="project">
+  <h3>
+    <a href="https://github.com/kritika-glich/hotel-management-system" target="_blank">
+      Hotel Management System (Python)
+    </a>
+  </h3>
+  <p>
+    Developed a console-based hotel management system using Python. Implemented features such as room booking, check-in/check-out, customer data management, and billing automation.
+  </p>
+</div>
+<div class="project">
+  <h3>
+    <a href="https://github.com/kritika-glich/CrispyTofuRecipe" target="_blank">
+      Urban Bites: Crispy Tofu Recipe (HTML, CSS)
+    </a>
+  </h3>
+  <p>
+    Built a responsive recipe webpage using HTML and CSS, featuring ingredients, 
+    step-by-step instructions, tips, and a video tutorial for an engaging user experience.
+  </p>
+</div>
+
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <a id="emailBtn">Email Me</a>
+    <a href="https://www.linkedin.com/in/kritika-regmi-a75486309" target="_blank">LinkedIn</a>
+    <a href="https://github.com/kritika-glich" target="_blank">GitHub</a>
+  </div>
+</section>
+
+<!-- Email Modal -->
+<div id="emailModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Send Email</h3>
+    <p>Email: <strong>kriregmi1@gmail.com</strong></p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Kritika Regmi. All Rights Reserved.</p>
+</footer>
+
+<script>
+  // Email popup functionality
+  const modal = document.getElementById('emailModal');
+  const btn = document.getElementById('emailBtn');
+  const span = document.querySelector('.close-btn');
+
+  btn.onclick = () => { modal.style.display = 'block'; }
+  span.onclick = () => { modal.style.display = 'none'; }
+  window.onclick = (event) => { if(event.target == modal) modal.style.display = 'none'; }
+</script>
+
+</body>
+</html>
