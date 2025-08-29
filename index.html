@@ -4,32 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kritika Regmi | UI/UX Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <h1>Kritika Regmi</h1>
+  <p>UI/UX Designer & Creative Developer</p>
   <nav>
-    <a href="#about">About</a>
+    <a href="#about">About Me</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
+  <div class="explore-btn">
+    <a href="#about">Explore My Work</a>
+  </div>
+  <div class="scroll-indicator">
+    <span></span>
+  </div>
 </header>
 
 <section id="about">
   <h2>About Me</h2>
-  <div class="about-container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 30px; max-width: 1000px; margin: auto;">
-    <div class="about-image" style="flex: 1 1 250px; text-align: center;">
-      <img src="kritika.jpg" alt="Kritika Regmi" style="border-radius: 15px; max-width: 250px; width: 100%; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="kritika.jpg" alt="Kritika Regmi">
     </div>
-    <div class="about-text" style="flex: 2 1 400px;">
+    <div class="about-text">
       <p>I I am an IT student passionate about UI/UX design, combining technology with creativity to craft user-friendly and responsive interfaces. My artistic background in painting and sketching brings a unique touch to my digital designs. I am eager to gain hands-on experience as a UI/UX designer.</p>
     </div>
   </div>
 </section>
-
 
 <section id="skills">
   <h2>Skills</h2>
@@ -67,48 +74,119 @@
 
 <section id="projects">
   <h2>Projects</h2>
-  <div class="projects">
+  <div class="projects-container">
+    
+    <!-- UI/UX Projects Card -->
     <div class="project">
-      <h3>
-        <a href="https://www.figma.com/files/team/1448510153348242222/project/312309533/My-projects?fuid=1448510151497160822" target="_blank">
-          UI/UX projects
-        </a>
-      </h3>
-      <p>Browse my UI/UX projects featuring animation prototyping, simple form design, and a complete UX workflow. These works highlight my approach to creating smooth interactions and user-friendly experiences in Figma.</p>
+      <div class="project-header">
+        <h3>UI/UX Projects</h3>
+        <span class="project-type">Design & Prototyping</span>
+      </div>
+      <div class="project-content">
+        <ul>
+          <li>
+            <a href="https://www.figma.com/design/3AFYnkdRvufkEzmcvYBWOg/Practice?node-id=0-1&t=IqTOKsD9m59SslRr-1" target="_blank">
+              Animation Prototyping Project
+            </a>
+          </li>
+          <li>
+            <a href="https://www.figma.com/design/uDnWKHEOGRk8jWE0G1kziE/Practice?node-id=2002-8&t=yoi0omhczOWoBaUq-1" target="_blank">
+              Simple Form Design Project
+            </a>
+          </li>
+          <li>
+            <a href="https://www.figma.com/design/qkdyiZJvCHrCOlOqluRjzt/Flight-Booking-Website-Landing-page-design--Community-?node-id=0-1&t=3yb5LAVud9D25lXx-1" target="_blank">
+              Flight Booking Landing Page
+            </a>
+          </li>
+        </ul>
+        <p>
+          Browse some of my UI/UX projects featuring animation prototyping, simple form design, 
+          and a complete UX workflow. These works highlight my approach to creating smooth interactions 
+          and user-friendly experiences in Figma.
+        </p>
+        <div class="project-footer">
+          <div class="project-tags">
+            <span class="project-tag">Figma</span>
+            <span class="project-tag">Prototyping</span>
+            <span class="project-tag">UI Design</span>
+          </div>
+        </div>
+      </div>
     </div>
-<div class="project">
-  <h3>
-    <a href="https://github.com/kritika-glich/hotel-management-system" target="_blank">
-      Hotel Management System (Python)
-    </a>
-  </h3>
-  <p>
-    Developed a console-based hotel management system using Python. Implemented features such as room booking, check-in/check-out, customer data management, and billing automation.
-  </p>
-</div>
-<div class="project">
-  <h3>
-    <a href="https://kritika-glich.github.io/moodkitty/" target="_blank">
-      MOODKITTY (HTML, CSS)
-    </a>
-  </h3>
-  <p>
-    MOODKITTY is a playful, cat-themed web project that reflects moods through simple kitty video. It’s beginner-friendly, interactive, and designed to bring joy while showcasing HTML and CSS skills.
-  </p>
-</div>
 
-<div class="project">
-  <h3>
-    <a href="https://kritika-glich.github.io/CrispyTofuRecipe/" target="_blank">
-      Urban Bites: Crispy Tofu Recipe (HTML, CSS)
-    </a>
-  </h3>
-  <p>
-    Built a responsive recipe webpage using HTML and CSS, featuring ingredients, 
-    step-by-step instructions, tips, and a video tutorial for an engaging user experience.
-  </p>
-</div>
+    <!-- Hotel Management System Card -->
+    <div class="project">
+      <div class="project-header">
+        <h3>
+          <a href="https://github.com/kritika-glich/hotel-management-system" target="_blank">
+            Hotel Management System
+          </a>
+        </h3>
+        <span class="project-type">Python Development</span>
+      </div>
+      <div class="project-content">
+        <p>
+          Developed a console-based hotel management system using Python. Implemented features such as room booking, check-in/check-out, customer data management, and billing automation.
+        </p>
+        <div class="project-footer">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Console App</span>
+            <span class="project-tag">Data Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- MOODKITTY Card -->
+    <div class="project">
+      <div class="project-header">
+        <h3>
+          <a href="https://kritika-glich.github.io/moodkitty/" target="_blank">
+            MOODKITTY
+          </a>
+        </h3>
+        <span class="project-type">Web Design</span>
+      </div>
+      <div class="project-content">
+        <p>
+          MOODKITTY is a playful, cat-themed web project that reflects moods through simple kitty video. It's beginner-friendly, interactive, and designed to bring joy while showcasing HTML and CSS skills.
+        </p>
+        <div class="project-footer">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Interactive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Crispy Tofu Recipe Card -->
+    <div class="project">
+      <div class="project-header">
+        <h3>
+          <a href="https://kritika-glich.github.io/CrispyTofuRecipe/" target="_blank">
+            Urban Bites: Crispy Tofu Recipe
+          </a>
+        </h3>
+        <span class="project-type">Web Development</span>
+      </div>
+      <div class="project-content">
+        <p>
+          Built a responsive recipe webpage using HTML and CSS, featuring ingredients, 
+          step-by-step instructions, tips, and a video tutorial for an engaging user experience.
+        </p>
+        <div class="project-footer">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 </section>
